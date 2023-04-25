@@ -10,4 +10,4 @@ function truncatedString(value, length){
     return value
 }
 
-text.innerHTML = truncatedString(text.textContent, 206)
+text.innerHTML = truncatedString(text.textContent, 20)
