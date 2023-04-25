@@ -1,58 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind final class</title>
-    <link rel="stylesheet" href="./dist/output.css">
-</head>
-<body>
-    <nav class="md:fixed md:top-0 md:left-0 md:right-0">
-        <ul class="flex md:flex-row flex-col justify-evenly
-        bg-slate-600 text-white md:h-12 h-screen items-center uppercase
-        border-b-orange-600 border-b-4 border-dashed">
-            <li class="">home</li>
-            <li class="">css</li>
-            <li class="">react</li>
-            <li class="">python</li>
-            <li class="">javascript</li>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Blogr</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/output.css">
+</head> 
+<body class="min-h-screen">
+<header class=" border-b rounded-bl-[88px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] ">
+  <nav class="flex gap-4 px-4 py-2 justify-between w-[100%]">
+    <div class="px-5 ">
+      <img src="./images/logo.svg" alt="Blogr">
+    </div>
+      <div class="flex justify-around gap-10"> 
+        <ul class="flex justify-around  items-center gap-10 ">
+          <li>Product</li>
+          <li>Company</li>
+          <li>Connect</li>
         </ul>
+    </div>
+    <div class="flex justify-end rounded-none w-2/4 ml-auto gap-10">
+    <button class="border rounded-full text-[hsl(13, 100%, 72%)] hover:bg-white">login</button>
+    <button class="border rounded-full text-[hsl(13, 100%, 72%)] hover:bg-white">sign up</button>
+    </div>
+  </nav>
+    <div class="rounded-none flex flex-col justify-center rounded-bl-[100px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] text-[hsl(0,0%,100%)] h-[600px]">
+     <h3 class="text-[hsl(0,0%,100%)] text-[54px] text-center">A modern publishing platform</h3>
+     <p class="flex justify-center py-2 pb-4">Grow your audience and build your online brand</p>
+     <div class="flex justify-center gap-5">
+       <button class="border rounded-full text-[hsl(13, 100%, 72%)] hover:bg-white px-5 py-2">Start for free</button>
+       <button class="border rounded-full text-[hsl(0,0%,100%)] hover:text-[hsl(13, 100%, 72%)] hover:bg-white px-5 py-2">learn more</button>
+     </div>
+  </div>
+</header>
+<main class="flex justify-center gap-4 h-[max-content] md:container md:mx-auto py-[6rem]">
+  <div class="w-1/2">  
+    <h2 class="text-center text-[28px] font-semibold text-[hsl(208,49%,24%)] pb-10">Designed for the future</h2>
+    <h3 class="text-[18px] font-semibold py-3 text-[hsl(208,49%,24%)]"> Introducing an extensible editor</h3>
+    <p class="text-[hsl(207,13%,34%)] pb-10 py-3">
+      Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+      The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+      videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+      change the looks of a blog.</p>
+    <h3 class="text-[18px] font-semibold text-[hsl(208,49%,24%)]">Robust content management</h3>
+       <p class=" text-[hsl(207,13%,34%)] pb-10 py-3">
+       Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+       by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+   </p>
+  </div>
+    <div  class="float-right w-1/3">
+      <img src="./images/illustration-editor-desktop.svg" alt="desktop">
+    </div>
+  </main>
+    
+  <div class="flex gap-4 items-center bg-[hsl(237,23%,32%)] rounded-btr-[100px] text-gray-100">
+    <div class="float-left w-2/4 text-gray-100">
+      <img src="./images/illustration-phones.svg" alt="phones">
+    </div>
+    <div class="w-1/3 h-[20px] ">
+      <h2 class=" text-[28px] font-semibold items-center text-[hsl(0,0%,100%)] py-3">State of the Art Infrastructure</h2>
+      <p class=" py-3 pb-10 text-[hsl(0,0%,100%)]">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+  </div>
+    </div> 
+    
+    
+    <div class="gap-2 flex text-[hsl(237,17%,21%)] h-[40px]">
+      <div class="float-right w-2/4 h-[70px]">
+        <img src="./images/illustration-laptop-desktop.svg" alt="laptop">
+      </div>
+      <div class="px-5 py-5">
+        <h2 class="text-[hsl(208,49%,24%)] items-center py-5 px-5">Free, open, simple</h2>
+        <p class="px-3 py-3 text-[hsl(207,13%,34%)]">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <h2 class="text-[hsl(208,49%,24%)] items-center px-3">Powerful tooling</h2>
+          <p class="px-3 py-3 text-[hsl(207,13%,34%)]">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+        
+        
+        
+        <!-- <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Sharon ibanga</a>.
+        </div> -->
+        <footer class=" flex mt-[20rem] text-[hsl(240,2%,79%)] bg-[hsl(240,10%,16%)]">
+          <div class="mt-[40px] h-72 rounded-tr-[100px] px-5 py-5">
+          <section class="flex justify-around h-[30px]">
+          <img src="./images/logo.svg" alt="Blogr">
+          <nav>
+      <ul class="px-10 py-10 gap-10">
+        <li>Product</li>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
     </nav>
-    <main class="relative -z-10 top-12 text-[24px] md:w-3/4 mx-auto lg:text-lg md:text-sm
-    grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
-        <div class="bg-cyan-200  border-r-8 border-r-black rounded-tr-[100px] border-l-red-800">
-            <h2 class="uppercase flex justify-center">chapter 1</h2>
-            <p class="px-4" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae rerum officiis natus id cupiditate odio omnis expedita, aspernatur earum, perspiciatis adipisci? Illum optio saepe, culpa officiis voluptatibus veritatis deleniti necessitatibus.</p>
-        </div>
-        <div class="bg-cyan-200 border-l-8 border-r-black rounded-tl-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 2</h2>    
-            <p class="px-4">Harum ipsum facere molestiae iusto deleniti similique voluptates dicta magnam commodi corporis dolore quae esse accusamus, unde laudantium iure dolorem, optio non quidem et sit vero! Libero facilis quis consectetur.</p>
-        </div>
-        <div class="bg-cyan-200 border-r-8 border-r-black rounded-tr-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 3</h2>
-            <p class="px-4">In possimus dicta rem illo molestiae necessitatibus fugit alias officia quas autem eos, laudantium iure error officiis praesentium veniam natus sapiente eius excepturi ratione velit et? Odit qui nihil natus.</p>
-        </div>
-        <div class="bg-cyan-300 rounded-tl-[100px] border-l-8">
-            <h2 class="uppercase flex justify-center">chapter 4</h2>
-            <p class="px-4">Rem nihil obcaecati alias deserunt omnis? Necessitatibus ex, voluptatum consectetur dolores delectus nobis. Nihil aut necessitatibus consequatur sit ut explicabo corrupti deleniti sequi laboriosam incidunt libero dolorum, suscipit, vel ipsam.</p>
-        </div>
-        <div class="bg-cyan-200 border-r-8 border-r-black rounded-tr-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 5</h2>
-            <p class="px-4">Tempore, rem, saepe quam consequuntur numquam quae sequi, obcaecati vel veritatis facilis similique distinctio. Nulla quis omnis laudantium assumenda accusamus quidem expedita totam rem excepturi sequi, incidunt illum non repudiandae!</p>
-        </div>
-        <div class="bg-cyan-200 border-l-8 border-r-black rounded-tl-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 6</h2>
-            <p class="px-4">Neque veniam cupiditate nihil, consequatur eum possimus omnis laboriosam repudiandae voluptates provident officiis, magnam aliquam sapiente odio accusantium, repellendus exercitationem quos praesentium nam vitae modi! Quas numquam tempora ab quasi!</p>
-        </div>
-        <div class="bg-cyan-200 border-r-8 border-r-black rounded-tr-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 7</h2>
-            <p class="px-4">Error reiciendis cupiditate veritatis voluptatibus maxime exercitationem fuga libero, ab autem temporibus culpa nesciunt! Voluptate, asperiores quis illo error possimus fugit, quod voluptas blanditiis, necessitatibus accusamus atque voluptatibus commodi natus.</p>
-        </div>
-        <div class="bg-cyan-200 border-l-8 border-r-black rounded-tl-[100px]">
-            <h2 class="uppercase flex justify-center">chapter 8</h2>
-            <p class="px-4">Doloribus libero mollitia recusandae deserunt, blanditiis repudiandae error? Saepe odit et ratione perspiciatis voluptates, deleniti esse vitae? Rem maxime harum itaque alias praesentium iste excepturi aut quibusdam pariatur, similique ad!</p>
-        </div>
-    </main>
-</body>
-</html>
+    <nav>
+      <ul class="px-10 py-10">
+        <li>Company</li>
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="px-10 py-10">
+        <li>Connect</li>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>LinkedIn</li>
+      </ul>
+    </nav>
+  </section>
+  </div>
+  </footer>
+  </body>
+  </html>
