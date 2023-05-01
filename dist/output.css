@@ -528,6 +528,10 @@ video {
   margin-left: auto;
 }
 
+.mr-20 {
+  margin-right: 5rem;
+}
+
 .mt-\[20rem\] {
   margin-top: 20rem;
 }
@@ -556,6 +560,10 @@ video {
   height: 40px;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
@@ -563,14 +571,6 @@ video {
 .h-\[max-content\] {
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .min-h-screen {
@@ -589,12 +589,8 @@ video {
   width: 50%;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-screen {
-  width: 100vw;
+.w-2\/5 {
+  width: 40%;
 }
 
 .w-\[100\%\] {
@@ -691,10 +687,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -705,6 +697,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -713,6 +710,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-3 {
@@ -730,31 +732,8 @@ video {
   padding-bottom: 6rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .pb-4 {
@@ -771,10 +750,6 @@ video {
 
 .text-\[28px\] {
   font-size: 28px;
-}
-
-.text-\[72px\] {
-  font-size: 72px;
 }
 
 .text-\[54px\] {
@@ -819,6 +794,10 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
@@ -858,6 +837,11 @@ video {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[hsl\(13\2c 100\%\2c 72\%\)\]:hover {
+  --tw-text-opacity: 1;
+  color: hsl(13 100% 72% / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
