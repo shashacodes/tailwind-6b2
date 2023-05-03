@@ -13,19 +13,27 @@
     <div class="px-5">
       <img src="./images/logo.svg" alt="Blogr">
     </div>
-      <div class="flex justify-around gap-10"> 
-        <ul class="flex justify-around  items-center gap-5">
-          <li>Product</li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-          <li>Company</li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-          <li>Connect</li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-            <!-- <select>
+      <div class="flex items-center justify-around gap-10 text-[hsl(13,100%,72%)]"> 
+          <select>
+            <option value="product" selected>product</option>
+            <option value="contact">Contact</option>
+            <option value="newletter">Newletter</option>
+            <option value="LinkedIn">LinkedIn</option>
+          </select>
+          <select>
+            <option value="company" selected>Company</option>
+            <option value="contact">Contact</option>
+            <option value="newletter">Newletter</option>
+            <option value="LinkedIn">LinkedIn</option>
+          </select>
+            <select>
+              <option value="connect" selected>Connect</option>
               <option value="contact">Contact</option>
               <option value="newletter">Newletter</option>
               <option value="LinkedIn">LinkedIn</option>
-            </select> -->
-        </ul>
-          
-    </div>
+            </select>
+         </div>
+
     <div class="flex justify-end rounded-none w-2/5 ml-auto gap-10">
     <button class="border rounded-full text-[hsl(13, 100%, 72%)]  hover:text-[hsl(13,100%,72%)] hover:bg-white">login</button>
     <button class="border rounded-full text-[hsl(13, 100%, 72%)]  hover:text-[hsl(13,100%,72%)] hover:bg-whites">sign up</button>
@@ -88,7 +96,7 @@
         </div>
         
         <footer class="mt-[10rem] rounded-tr-[100px] text-[hsl(240,2%,79%)] bg-[hsl(240,10%,16%)] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="flex">
+          <div class="flex justify-around">
             <section class="mt-[10rem] py-10 px-10 ">
               <img src="./images/logo.svg" alt="Blogr">
             </section>
