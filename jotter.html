@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jotter</title>
+    <!-- <script src="./jotter.js"></script> -->
+</head>
+<body>
+    <!-- <h1>my jotter</h1> -->
+    <script>
+        {
+          alert( "i'm javascript");
+          alert('hello world!')
+        }
+    </script>
+</body>
+</html>
+
+
+
+<h1>CGPA Calculator</h1>
+<label for="name">Enter your name:</label>
+<input type="text" id="name">
+<br><br>
+<label for="credits">Enter total credits:</label>
+<input type="number" id="credits">
+<br><br>
+<label for="grade">Enter grade points:</label>
+<input type="text" id="grade">
+<br><br>
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+<br><br>
+<p id="result"></p>
+
+<script>
+    function calculateCGPA() {
+var grade1 = document.getElementById("grade1").value;
+var grade2 = document.getElementById("grade2").value;
+var grade3 = document.getElementById("grade3").value;
+
+var credit1 = document.getElementById("credit1").value;
+var credit2 = document.getElementById("credit2").value;
+var credit3 = document.getElementById("credit3").value;
+
+var totalCredits = Number(credit1) + Number(credit2) + Number(credit3);
+
+var totalGradePoints = (Number(grade1) * Number(credit1)) + (Number(grade2) * Number(credit2)) + (Number(grade3) * Number(credit3));
+
+var cgpa = totalGradePoints / totalCredits;
+
+document.getElementById("cgpa").innerHTML = "Your CGPA is: " + cgpa.toFixed(2);
+}
+
+</script>

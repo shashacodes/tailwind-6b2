@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cgpa</title>
+</head>
+<body>
+    <table border="4">
+            <th>Subject</th>
+            <th>Score</th>
+            <th>Grade</th>
+        
+        <tbody>
+            <tr>
+                <th>English</th>
+                <td><input type="number" name="score" id="hs"></td>
+                <td id="one"></td>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <td><input type="number" name="score" id="mt"></td>
+                <td id="two"></td>
+            </tr>
+            <tr>
+                <th>French</th>
+                <td><input type="number" name="score" id="fr"></td>
+                <td id="three"></td>
+            </tr>
+            <tr>
+                <th>Literature</th>
+                <td><input type="number" name="score" id="lt"></td>
+                <td id="four"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                <button id="button">Check Average</button></td>
+                <td id="avg"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        const hs = document.getElementById('hs')
+        const mt = document.getElementById('mt')
+        const fr = document.getElementById('fr')
+        const lt = document.getElementById('lt')
+
+        const one = document.getElementById('one')
+        const two = document.getElementById('two')
+        const three = document.getElementById('three')
+        const four = document.getElementById('four')
+
+
+        const avg = document.getElementById('avg')
+        const btn = document.getElementById('button')
+
+        function calcScore(){
+            const score1 = Number(hs.value)
+            const score2 = Number(mt.value)
+            const score3 = Number(fr.value)
+            const score4 = Number(lt.value)
+            const total = score1 + score2 + score3 + score4
+
+        score1 >= 70 ? one.textContent = "A" : score1 >= 60 ? one.textContent = "B" : score1 >= 50 ? one.textContent = "C" : score1 >= 40 ? one.textContent = "D" :  one.textContent = "F";
+        score2 >= 70 ? two.textContent = "A" : score2 >= 60 ? two.textContent = "B" : score2 >= 50 ? two.textContent = "C" : score2 >= 40 ? two.textContent = "D" :  two.textContent = "F";
+        score3 >= 70 ? three.textContent = "A" : score3 >= 60 ? three.textContent = "B" : score3 >= 50 ? three.textContent = "C" : score3 >= 40 ? three.textContent = "D" : three.textContent = "F";
+        score4 >= 70 ? four.textContent = "A" : score4 >= 60 ? four.textContent = "B" : score4 >= 50 ? four.textContent = "C" : score4 >= 40 ? four.textContent = "D" : four.textContent = "F";
+
+        avg.textContent = (total / 4).toFixed(2);
+        }
+       
+        btn.addEventListener("click",calcScore)
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+</head>
+<body>
+
+    <table border="4">
+        <th>COURSE TITLE</th>
+        <th>CREDIT UNIT</th>
+        <th>SCORE</th>
+        <th>GRADE</th>
+    
+
+        <tbody>
+            <tr>
+            <th>GS101</th>
+            <td id="unit1">4</td>
+            <td><input type="number" name="score" id="gs"></td>
+            <td id="one"></td>
+            </tr>
+            <tr>
+            <th>CHEM101</th>
+            <td id="unit2">3</td>
+            <td><input type="number" name="score" id="chem"></td>
+            <td id="two"></td>
+            </tr>
+            <tr>
+            <th>BIO101</th>
+            <td id="unit3">3</td>
+            <td><input type="number" name="score" id="bio"></td>
+            <td id="three"></td>
+            </tr>
+            <tr>
+            <th>PHY101</th>
+            <td id="unit4">4</td>
+            <td><input type="number" name="score" id="phy"></td>
+            <td id="four"></td>
+            </tr>
+            <tr>
+                <th>MATH101</th>
+                <td id="unit5">3</td>
+                <td><input type="number" name="score" id="mt"></td>
+                 <td id="five"></td>
+           </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="1"><button>Gpa</button> </td>
+            <td>17</td>
+            <td colspan="2" id="avg"></td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-lg">
+<h1>CGPA Calculator</h1>
+<label for="name">Enter your name:</label>
+<input type="text" id="name"><br><br>
+<label for="grade">Enter total grade points:</label>
+<input type="number" id="grade">
+<p>70-100; A= 5 POINTS <br> 60-69; B= 4 POINTS <br> 50-59; C= 3 POINTS <br> 45-49; D= 2 POINTS <br> below 40; F = 0 POINT </p>
+<label for="credits">Enter total credit unit:</label>
+<input type="number" id="credits"> <br>
+<button>Calculate CGPA</button>
+<br>
+<p id="result"></p>
+</div>
+
+ <script>
+    const GS101 = document.getElementById('gs')
+    const CHEM101 = document.getElementById('chem')
+    const BIO101 = document.getElementById('bio')
+    const PHY101 = document.getElementById('phy')
+    const MT101 = document.getElementById('mt')
+
+    const one = document.getElementById('one')
+    const two = document.getElementById('two')
+    const three = document.getElementById('three')
+    const four = document.getElementById('four')
+    const five = document.getElementById('five')
+
+    
+    const btn = document.querySelector('button')
+    const average = document.getElementById('avg')
+    const button = document.getElementById('btn')
+    
+    function calcScore(){
+        const score1 = Number(gs.value)
+        const score2 = Number(chem.value)
+        const score3 = Number(bio.value)
+        const score4 = Number(phy.value)
+        const score5 = Number(mt.value)
+        const total = score1 + score2 + score3 + score4 + score5
+        
+        score1 >= 70 ? one.textContent = "A" : score1 >= 60 ? one.textContent = "B" : score1 >= 50 ? one.textContent = "C" : score1 >= 40 ? one.textContent = "D" :  one.textContent = "F";
+        score2 >= 70 ? two.textContent = "A" : score2 >= 60 ? two.textContent = "B" : score2 >= 50 ? two.textContent = "C" : score2 >= 40 ? two.textContent = "D" :  two.textContent = "F";
+        score3 >= 70 ? three.textContent = "A" : score3 >= 60 ? three.textContent = "B" : score3 >= 50 ? three.textContent = "C" : score3 >= 40 ? three.textContent = "D" : three.textContent = "F";
+        score4 >= 70 ? four.textContent = "A" : score4 >= 60 ? four.textContent = "B" : score4 >= 50 ? four.textContent = "C" : score4 >= 40 ? four.textContent = "D" : four.textContent = "F";
+        score5 >= 70 ? five.textContent = "A" : score5 >= 60 ? five.textContent = "B" : score5 >= 50 ? five.textContent = "C" : score5 >= 40 ? five.textContent = "D" : five.textContent = "F";
+        return avg.textContent = `Your gpa is ${(total / 4 ).toFixed(2)} %`
+    }
+    btn.addEventListener("click",calcScore)
+
+    const calcButton = document.getElementById('btn')
+
+    const point1 = document.getElementById('point1')
+    const point2 = document.getElementById('point2')
+    const point3 = document.getElementById('point3')
+    const point4 = document.getElementById('point4')
+    const point5 = document.getElementById('point5')
+    
+    const unit1 = document.getElementById('unit1')
+    const unit2 = document.getElementById('unit2')
+    const unit3 = document.getElementById('unit3')
+    const unit4 = document.getElementById('unit4')
+    const unit5 = document.getElementById('unit5')
+
+        function calculateCGPA() {
+    const resultPara = document.getElementById('result')
+    const totalGradePoints = 'point1' + 'point2' + 'point3' + 'point4' + 'point5'
+    const totalCreditsUnit = 17;
+
+ resultPara ==  one.textContent >= 70 ? 5 : two.textContent >= 60 ? 4 : three.textContent >= 50 ? 3 : four.textContent >= 40 ? 2 :0;
+
+
+const cgpa = totalGradePoints / totalCreditsUnit;
+resultPara.innerHTML = `Your CGPA is: ${totalGradePoints / totalCreditsUnit.toFixed(1)}`;
+}
+btn.addEventListener("click",calculateCGPA)
+console.log(calculateCGPA())
+
+    
+</script>
+</body>
+</html>

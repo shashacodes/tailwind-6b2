@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gradient-to-tr from-orange-500  to-teal-400 h-screen">
+    <main>
+        <h2 class="flex justify-center items-cenboter border rounded-full mt-[200px] text-yellow-200 text-[150px]">
+            <span id="hour">12</span>:
+            <span id="minutes">55</span>:
+            <span id="seconds">33</span>:
+            <span id="mil">ms</span>
+            <span id="time">pm</span>:
+        </h2>
+    </main>
+    <script>
+        const hour = document.getElementById('hour')
+        const min = document.getElementById('minutes')
+        const sec = document.getElementById('seconds')
+        const ampm = document.getElementById('time')
+        const milli = document.getElementById('mil')
+
+    function updateTime(){
+        const h = new Date().getHours()
+        const m = new Date().getMinutes()
+        const s = new Date().getSeconds()
+        const millie = new Date().getMilliseconds()
+
+        hour.textContent = h > 12 ?`0${h - 12}` : h
+        min.textContent = m 
+        sec.textContent = s < 10 ? `0${s}` :s 
+        ampm.textContent =  h < 12 ? "AM" : "PM"
+        milli.textContent = millie
+
+        setTimeout(() => updateTime(), 100)
+    }
+
+    updateTime()
+    </script>
+</body>
+</html>

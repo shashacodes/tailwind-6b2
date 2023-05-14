@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <section class="preview">
+    </section>
+    <button id="btn">click</button>
+
+    <script>
+        // const myArray = ['tomatoes', 'Chick peas', 'onions', 'rice', 'black beans'];
+        const list = document.createElement('ul');
+        const btn = document.getElementById('btn')
+
+        function addFruit(){
+            const myArray = [];
+          let y = prompt('add another fruit')
+           myArray.push(y) // [...myArray, y]
+
+          for (const item of myArray) {
+            const listitem = document.createElement('li');
+            list.append(listitem)
+            
+            return listitem.textContent = item
+        
+        }
+    }
+    
+    btn.addEventListener("click",addFruit)
+    const section = document.querySelector('section');
+        section.appendChild(list);
+    </script>
+</body>
+</html>
