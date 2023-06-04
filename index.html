@@ -7,101 +7,101 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/output.css">
 </head> 
-<body class="min-h-screen grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-<header class=" border-b rounded-bl-[88px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] col-span-1 md:col-span-2 lg:col-span-3 ">
-  <nav class="flex gap-4 px-4 py-2 justify-between w-[100%]">
-    <div class="px-5">
+<body class="min-h-screen md:grid-cols-2">
+<header class=" border-b rounded-bl-[88px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] grid grid-rows-1 md:col-span-2 ">
+  <nav class="md:flex flex-row gap-4 md:px-4 md:py-2 md:justify-between w-[100%]">
+    <div class="md:px-5">
       <img src="./images/logo.svg" alt="Blogr">
     </div>
-      <div class="flex items-center justify-around gap-10 text-[hsl(13,100%,72%)]"> 
-          <select>
+      <div class="md:flex flex-row md:items-center md:justify-around md:gap-10 gap-4 py-5"> 
+          <select class=" flex-row gap-5">
             <option value="product" selected>product</option>
             <option value="contact">Contact</option>
-            <option value="newletter">Newletter</option>
+            <option value="newsletter">Newsletter</option>
             <option value="LinkedIn">LinkedIn</option>
           </select>
-          <select>
+          <select class="md:flex flex-row items-center justify-around md:gap-10 gap-5">
             <option value="company" selected>Company</option>
             <option value="contact">Contact</option>
-            <option value="newletter">Newletter</option>
+            <option value="newsletter">Newsletter</option>
             <option value="LinkedIn">LinkedIn</option>
           </select>
-            <select>
+            <select class="md:flex flex-row items-center justify-around md:gap-10 gap-5">
               <option value="connect" selected>Connect</option>
               <option value="contact">Contact</option>
-              <option value="newletter">Newletter</option>
+              <option value="newsletter">Newsletter</option>
               <option value="LinkedIn">LinkedIn</option>
             </select>
          </div>
 
-    <div class="flex justify-end rounded-none w-2/5 ml-auto gap-10">
+    <div class="md:flex md:justify-end flex-row rounded-none md:w-2/5 md:ml-auto md:gap-10 gap-4">
     <button class="border rounded-full text-[hsl(13, 100%, 72%)]  hover:text-[hsl(13,100%,72%)] hover:bg-white">login</button>
     <button class="border rounded-full text-[hsl(13, 100%, 72%)]  hover:text-[hsl(13,100%,72%)] hover:bg-whites">sign up</button>
     </div>
   </nav>
-    <div class="rounded-none flex flex-col justify-center rounded-bl-[100px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] text-[hsl(0,0%,100%)] h-[600px]">
-     <h3 class="text-[hsl(0,0%,100%)] text-[54px] text-center">A modern publishing platform</h3>
-     <p class="flex justify-center py-2 pb-4">Grow your audience and build your online brand</p>
-     <div class="flex justify-center gap-5">
+    <div class="rounded-none md:flex md:flex-col flex-row justify-center rounded-bl-[100px] bg-gradient-to-r from-[hsl(13,100%,72%)] to [hsl(355, 100%, 74%)] text-[hsl(0,0%,100%)] h-[600px]">
+     <h3 class="text-[hsl(0,0%,100%)] text-[54px] md:text-center">A modern publishing platform</h3>
+     <p class="flex md:justify-center py-2 pb-4">Grow your audience and build your online brand</p>
+     <div class="md:flex flex-row justify-center gap-5">
        <button class="border rounded-full text-[hsl(13, 100%, 72%)] hover:text-[hsl(13,100%,72%)] hover:bg-white px-5 py-2">Start for free</button>
        <button class="border rounded-full text-[hsl(0,0%,100%)] hover:text-[hsl(13,100%,72%)] hover:bg-white px-5 py-2">learn more</button>
      </div>
   </div>
 </header>
-<main class="flex justify-center gap-4 h-[max-content] md:container md:mx-auto py-[6rem]">
+<main class="md:flex flex-row justify-center gap-4 h-[max-content] md:container md:mx-auto md:py-[6rem] py-3 p-3">
   <div class="w-1/2">  
-    <h2 class="text-center text-[28px] font-semibold text-[hsl(208,49%,24%)] pb-10">Designed for the future</h2>
-    <h3 class="text-[18px] font-semibold py-3 text-[hsl(208,49%,24%)]"> Introducing an extensible editor</h3>
-    <p class="text-[hsl(207,13%,34%)] pb-10 py-3">
+    <h2 class="text-center md:text-[28px] md:font-semibold text-[hsl(208,49%,24%)] md:pb-10">Designed for the future</h2>
+    <h3 class="md:text-[18px] md:font-semibold font-normal md:py-3 text-[hsl(208,49%,24%)]"> Introducing an extensible editor</h3>
+    <p class="text-[hsl(207,13%,34%)] md:pb-10 md:py-3">
       Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
       The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
       videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
       change the looks of a blog.</p>
-    <h3 class="text-[18px] font-semibold text-[hsl(208,49%,24%)]">Robust content management</h3>
-       <p class=" text-[hsl(207,13%,34%)] pb-10 py-3">
+    <h3 class="md:text-[18px] md:font-semibold text-[hsl(208,49%,24%)]">Robust content management</h3>
+       <p class=" text-[hsl(207,13%,34%)] md:pb-10 md:py-3">
        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
        by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
    </p>
   </div>
-    <div  class="float-right w-1/3">
+    <div  class="md:float-right flex-row md:w-1/3">
       <img src="./images/illustration-editor-desktop.svg" alt="desktop">
     </div>
   </main>
     
-  <div class="flex gap-4 items-center bg-[hsl(237,23%,32%)] rounded-tr-[100px] text-gray-100">
+  <div class="md:flex flex-row gap-4 items-center bg-[hsl(237,23%,32%)] py-3 rounded-tr-[100px] text-gray-100">
     <div class="flex-wrap w-2/5 text-gray-100">
       <img src="./images/illustration-phones.svg" alt="phones">
     </div>
-    <div class="w-1/3 h-[20px]col-span-1 md:col-span-2 lg:col-span-3">
-      <h2 class=" text-[28px] font-semibold items-center text-[hsl(0,0%,100%)] py-3">State of the Art Infrastructure</h2>
-      <p class=" py-3 pb-10 text-[hsl(0,0%,100%)]">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+    <div class="md:w-1/3 md:h-[20px]">
+      <h2 class=" md:text-[28px] md:font-semibold md:items-center text-[hsl(0,0%,100%)] md:py-3">State of the Art Infrastructure</h2>
+      <p class=" md:py-3 m-0 md:pb-10 text-[hsl(0,0%,100%)]">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
         This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
   </div>
     </div> 
     
     
-    <div class="flex items-center gap-2 text-[hsl(237,17%,21%)]">
-      <div class="flex-wrap ">
+    <div class="md:flex flex-row md:items-center gap-2 text-[hsl(237,17%,21%)]">
+      <div class="md:flex-wrap ">
         <img src="./images/illustration-laptop-desktop.svg" alt="laptop">
       </div>
-      <div class="px-5 py-5">
-        <h2 class="text-[hsl(208,49%,24%)]  py-5 px-5">Free, open, simple</h2>
-        <p class="px-3 py-3 text-[hsl(207,13%,34%)]">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      <div class="md:px-5 md:py-5 p-5">
+        <h2 class="text-[hsl(208,49%,24%)]  md:py-5 md:px-5">Free, open, simple</h2>
+        <p class="md:px-3 md:py-3 text-[hsl(207,13%,34%)]">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
           features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
           and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-          <h2 class="text-[hsl(208,49%,24%)] py-5 px-5">Powerful tooling</h2>
-          <p class="px-3 py-3 pb-10 text-[hsl(207,13%,34%)]">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          <h2 class="text-[hsl(208,49%,24%)] md:py-5 md:px-5">Powerful tooling</h2>
+          <p class="md:px-3 md:py-3 md:pb-10 text-[hsl(207,13%,34%)]">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
             capable of producing even the most complicated sites.</p>
           </div>
         </div>
         
-        <footer class="mt-[10rem] rounded-tr-[100px] text-[hsl(240,2%,79%)] bg-[hsl(240,10%,16%)] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="flex justify-around">
-            <section class="mt-[10rem] py-10 px-10 ">
+        <footer class="p-5 mt-[10rem] rounded-tr-[100px] text-[hsl(240,2%,79%)] bg-[hsl(240,10%,16%)]">
+          <div class="md:flex justify-between flex-row">
+            <section class="mt-[10rem] py-10 px-10  ">
               <img src="./images/logo.svg" alt="Blogr">
             </section>
-              <nav class="flex justify-around grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-                <ul class="px-10 py-10 gap-8">
+              <nav>
+                <ul class="md:px-10 md:py-10 md:gap-8 p-5">
                   <li>Product</li>
                   <li>Overview</li>
                   <li>Pricing</li>
@@ -111,7 +111,7 @@
                 </ul>
               </nav>
               <nav>
-                <ul class="px-10 py-10 gap-8">
+                <ul class="md:px-10 md:py-10 md:gap-8 p-5">
                   <li>Company</li>
                   <li>About</li>
                   <li>Team</li>
@@ -120,7 +120,7 @@
                 </ul>
               </nav>
               <nav>
-                <ul class="px-10 py-10 gap-8">
+                <ul class="md:px-10 md:py-10 md:gap-8 p-5">
         <li>Connect</li>
         <li>Contact</li>
         <li>Newsletter</li>
