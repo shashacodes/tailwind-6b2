@@ -524,6 +524,34 @@ video {
   margin-top: 2.5rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -532,13 +560,13 @@ video {
   display: grid;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-\[max-content\] {
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-\[600px\] {
-  height: 600px;
 }
 
 .min-h-screen {
@@ -565,12 +593,20 @@ video {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -595,6 +631,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .rounded-full {
@@ -635,6 +675,10 @@ video {
   background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -653,6 +697,15 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3 {
@@ -678,11 +731,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-4 {
@@ -790,6 +838,16 @@ video {
   color: hsl(13 100% 72% / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
@@ -812,16 +870,24 @@ video {
     margin-top: 10rem;
   }
 
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:h-\[20px\] {
     height: 20px;
-  }
-
-  .md\:h-\[600px\] {
-    height: 600px;
   }
 
   .md\:w-1\/3 {
